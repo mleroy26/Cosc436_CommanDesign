@@ -5,7 +5,11 @@ public class Invoker {
 	public Invoker(){
 
 	}
-	public Menu GetMenu(){
+	public Menu getMenu(){
 		return (Menu) new CMDGetMenu(agg).execute();
+	}
+	public Menu getHeartHealthyMenu() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

@@ -5,11 +5,13 @@ public class SysInterface {
 	
 	
 	public static Menu getMenu(){
-		Menu menu=invoker.GetMenu();
+		Menu menu=invoker.getMenu();
 		//use menuItr to gather items and return as strings to user interface 
 		return menu;
 	}
 	public static Menu getHeartHealthyMenu(){
-		return null;
+		Menu menu=invoker.getHeartHealthyMenu();
+		//same
+		return menu;
 	}
 }

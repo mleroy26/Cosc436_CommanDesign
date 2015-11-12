@@ -1,0 +1,19 @@
+Possible Additions
+
+-Other info stored and used
+	-tabs
+-Multiple tables
+-Dynamic Pricing
+-Reports
+	-Total sales
+	-Most ordered items
+	-Etc.
+-Seating people 
+
+
+Design Patterns	
+	-Observer 
+	-Template (algorithm related)
+	-Composite
+	-Strategy
+	-Decorator
