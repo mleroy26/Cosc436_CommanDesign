@@ -10,6 +10,11 @@ public class MenuItem {
 		this.price=price;
 		hh=heartHealthy;
 	}
+	public MenuItem(MenuItem m){
+		this.name=m.name;
+		this.price=m.price;
+		this.hh=m.hh;
+	}
 
 	public String getName() {
 		return name;

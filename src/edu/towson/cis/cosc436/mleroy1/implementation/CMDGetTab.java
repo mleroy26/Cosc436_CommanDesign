@@ -4,10 +4,13 @@ import edu.towson.cis.cosc436.mleroy1.interfaces.Command;
 
 public class CMDGetTab implements Command {
 
-	@Override
-	public Tab execute() {
-		// TODO Auto-generated method stub
-		return null;
+private Aggregator agg;
+	
+	public CMDGetTab(Aggregator agg){
+		this.agg=agg;
+	}
+	public Orders execute() {
+		return agg.getOrders();
 	}
 
 }

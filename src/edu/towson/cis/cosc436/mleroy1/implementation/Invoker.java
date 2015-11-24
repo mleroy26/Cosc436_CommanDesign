@@ -1,7 +1,7 @@
 package edu.towson.cis.cosc436.mleroy1.implementation;
 
 public class Invoker {
-	Aggregator agg;
+	Aggregator agg =new Aggregator();
 	public Invoker(){
 
 	}
@@ -9,7 +9,12 @@ public class Invoker {
 		return (Menu) new CMDGetMenu(agg).execute();
 	}
 	public Menu getHeartHealthyMenu() {
-		// TODO Auto-generated method stub
-		return null;
+		return (Menu) new CMDGetHeartHealthyMenu(agg).execute();
+	}
+	public Object submitOrder(){
+		return new CMDSubmitOrder(agg);
+	}
+	public Orders getOrders(){
+		return new CMDGetTab(agg).execute();
 	}
 }
